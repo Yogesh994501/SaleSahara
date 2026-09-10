@@ -22,8 +22,6 @@ import { AddLeadModal } from './components/Screens/AddLeadModal';
 import { AIAssistantDrawer } from './components/Screens/AIAssistantDrawer';
 import { AIAssistantScreen } from './components/Screens/AIAssistantScreen';
 import { SettingsScreen } from './components/Screens/SettingsScreen';
-import { SalespersonComparisonScreen } from './components/Screens/SalespersonComparisonScreen';
-import { CustomerRetentionScreen } from './components/Screens/CustomerRetentionScreen';
 
 export default function App() {
   // Navigation view: 'landing' | 'login' | 'app'
@@ -222,7 +220,6 @@ export default function App() {
                 onNavigate={(screenId) => setCurrentScreen(screenId)}
               />
             )}
-
             {currentScreen === 'salesperson-comparison' && (
               <SalespersonComparisonScreen
                 onTriggerAction={handleTriggerAction}
